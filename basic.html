@@ -1,0 +1,64 @@
+<html>
+  <body>
+
+    <style>
+
+
+    .large{
+      font-size:400%;
+    }
+
+    .bye{
+      font-size:200%;
+    }
+
+    #byebye{
+      color:red;
+    }
+
+    .blue-text{
+      color:blue;
+    }
+
+    .padding{
+      padding:30px;
+    }
+
+    </style>
+
+
+
+    <div class="padding">
+      <h1 class="large">
+        Hello
+      </h1>
+
+
+      <p>
+        This is my website
+      </p>
+
+      <button>Turn this text blue</button>
+
+      <h1 class="large">
+        Bye!
+      </h1>
+
+      <h1 id="byebye">
+        Bye bye
+      </h1>
+
+    <div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    
+    <script>
+      $('button').click(function(){
+        console.log("Clicked");
+        $('body').addClass("blue-text");
+      });
+
+    </script>
+
+  </body>
+</html>
